@@ -9,5 +9,6 @@ with open("text.txt", 'rt') as text:
             else:
                 words_count_map[word] = 1
 
+sortedList = sorted(words_count_map.items(), key=lambda x: x[1])[-10:]
 
-print(sorted(words_count_map.items(), key=lambda x: x[1])[::-1])
+print(sortedList, len(sortedList))
