@@ -1,3 +1,5 @@
+#try схема горнера
+
 def polinom(coefficients):
     def polinom_wrapper(x):
         sum = 0
